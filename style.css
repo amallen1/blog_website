@@ -32,7 +32,7 @@ a {
 
 .navbar {
   background: white;
-  padding: 1em;
+  padding: 0.5em;
 }
 
 .navbar .logo {
@@ -42,7 +42,8 @@ a {
   font-weight: bolder;
   font-size: 2em;
   font-family: 'Khmer MN', sans-serif;
-  margin-left: 130px;
+  padding-top: 15px;
+  margin: auto;
 }
 
 nav {
@@ -53,14 +54,26 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.date {
+.mobile-menu {
+  cursor: pointer;
+}
+
+.post-date {
   text-align: center;
   color: #8B8B8B;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .main-post {
@@ -69,6 +82,20 @@ nav {
 
 .main-post-title {
   text-align: center;
+  padding: 10px;
+  font-size: 40px;
+  line-height: 1.3em;
+  z-index: auto;
+}
+
+.underline {
+  width: 210px;
+  height: 12px;
+  background-color: black;
+  position: absolute;
+  left: 132px;
+  bottom: 90px;
+  z-index: -1;
 }
 
 .desc {

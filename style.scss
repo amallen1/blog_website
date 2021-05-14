@@ -38,7 +38,7 @@ a {
 
 .navbar {
     background: white;
-    padding: 1em;
+    padding: 0.5em;
 
     //can nest elements in sass
     .logo {
@@ -48,7 +48,8 @@ a {
         font-weight: bolder;
         font-size: 2em;
         font-family: 'Khmer MN', sans-serif;
-        margin-left: 130px;
+        padding-top:15px;
+        margin: auto;
       }
 }
 
@@ -58,12 +59,21 @@ nav {
 
 .header-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
-.date {
+.mobile-menu {
+    cursor: pointer;
+}
+
+.post-date {
     text-align: center;
     color: #8B8B8B;
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
 
@@ -73,6 +83,21 @@ nav {
 
 .main-post-title {
     text-align: center;
+    padding: 10px;
+    font-size: 40px;
+    line-height: 1.3em;
+    z-index: auto;
+}
+
+.underline {
+    width: 210px;
+    height: 12px;
+    background-color: black;
+    position: absolute;
+    left: 132px;
+    bottom: 90px;
+    z-index: -1;
+    
 }
 
 .desc {
