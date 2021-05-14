@@ -25,10 +25,13 @@ a {
   text-decoration: none;
 }
 
-.hero {
-  width: 100%;
-  height: 391px;
+.hero .hero-img {
   background-color: var(--primary-color);
+  background-image: url(/assets/woman.svg);
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -127,14 +130,5 @@ nav {
   background-color: var(--tertiary-color);
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.featured-blogs {
-  background-color: #aeaeff;
-}
-
-.featured-blogs li img {
-  width: 15em;
-  height: 15em;
 }
 /*# sourceMappingURL=style.css.map */
