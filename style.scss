@@ -73,11 +73,9 @@ nav {
 }
 
 .main-post {
-  background-color: #fff5f5;
+  background-color: #f5aaaa;
   padding-top: 20px;
   position: relative;
-  z-index: -12;
-  display: inline;
 }
 
 .main-post-title {
@@ -85,7 +83,6 @@ nav {
   text-align: center;
   font-size: 40px;
   line-height: 1.3em;
-  z-index: 5;
 }
 
 .underline {
@@ -118,7 +115,15 @@ nav {
   cursor: pointer;
 }
 
+.featured-blogs {
+  background-color: rgb(255, 255, 255);
+  margin-top: 30px;
 
+  .featured-heading {
+    text-align: center;
+    margin: 20px;
+  }
+}
 
 .blog-grid {
   display: grid;
@@ -126,16 +131,15 @@ nav {
   grid-template-rows: repeat(3, 400px);
   gap: 20px;
   justify-content: center;
-  
 }
 
 .grid-item {
   background-color: pink;
-  border: 1px solid black;
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 
   .blog-img {
-    padding: 20px;
   }
 }
-
-

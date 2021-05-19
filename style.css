@@ -82,11 +82,9 @@ nav {
 }
 
 .main-post {
-  background-color: #fff5f5;
+  background-color: #f5aaaa;
   padding-top: 20px;
   position: relative;
-  z-index: -12;
-  display: inline;
 }
 
 .main-post-title {
@@ -94,7 +92,6 @@ nav {
   text-align: center;
   font-size: 40px;
   line-height: 1.3em;
-  z-index: 5;
 }
 
 .underline {
@@ -133,6 +130,16 @@ nav {
   cursor: pointer;
 }
 
+.featured-blogs {
+  background-color: white;
+  margin-top: 30px;
+}
+
+.featured-blogs .featured-heading {
+  text-align: center;
+  margin: 20px;
+}
+
 .blog-grid {
   display: -ms-grid;
   display: grid;
@@ -148,10 +155,14 @@ nav {
 
 .grid-item {
   background-color: pink;
-  border: 1px solid black;
-}
-
-.grid-item .blog-img {
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
